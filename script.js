@@ -41,3 +41,22 @@ buttonContainer.addEventListener('click', (event) => {
     delegationMessage.textContent = `You clicked on ${event.target.textContent}`;
   }
 });
+
+// Mouse event handler
+document.getElementById('hoverButton').addEventListener('mouseenter', function() {
+  document.getElementById('mouseMessage').textContent = 'Button Hovered!';
+});
+document.getElementById('hoverButton').addEventListener('mouseleave', function() {
+  document.getElementById('mouseMessage').textContent = 'Hover over me!';
+});
+
+// Keyboard event handler
+document.getElementById('keyboardInput').addEventListener('keyup', function(event) {
+  document.getElementById('keyboardMessage').textContent = `Last key pressed: ${event.key}`;
+});
+
+// Form submission event handler
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  document.getElementById('formMessage').textContent = 'Form submitted!';
+});
