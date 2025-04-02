@@ -1,8 +1,19 @@
+#hoverButton {
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
-body { font-family: Arial, sans-serif; margin: 20px; }
-section { margin-bottom: 20px; }
-button { padding: 10px; font-size: 16px; }
-input { padding: 8px; font-size: 16px; }
-p { font-size: 16px; color: #333; }
-#buttonContainer { display: flex; gap: 10px; }
+#keyboardInput {
+    margin-top: 20px;
+    padding: 5px;
+}
 
+#buttonContainer {
+    margin-top: 30px;
+}
+
+.delegatedButton {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
